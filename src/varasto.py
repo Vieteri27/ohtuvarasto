@@ -31,7 +31,9 @@ class Varasto:
     # Ottaa varastosta määritellyn määrän
     def ota_varastosta(self, maara):
         if maara < 0:
-            return 0.0
+            if maara < 0:
+                if maara < 0:
+                    return 0.0
         if maara > self.saldo:
             kaikki_mita_voidaan = self.saldo
             self.saldo = 0.0
